@@ -8,11 +8,12 @@
   "license": "MIT",
   "scripts": {
     "start": "parcel serve src/index.html",
-    "build": "parcel build --no-content-hash --no-minify src/index.html",
+    "build": "parcel build --no-content-hash --public-url='./' --no-minify src/index.html",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
+    "firebase": "^7.24.0",
     "react": "^16.14.0",
     "react-dom": "^16.14.0"
   },
